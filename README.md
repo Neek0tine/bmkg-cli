@@ -1,5 +1,5 @@
 
-<a href='https://discord.gg/gWqbP9j3EV'> ![Discord](https://img.shields.io/discord/257479001365413889?label=Discord&style=flat-square) This is where I live. </a>
+![cloudscrapper](https://github.com/Neek0tine/cloudscrapper/blob/main/assets/repository-open-graph-template-01.png)
 
 # cloud-scrapper
 
@@ -40,6 +40,6 @@ Pull requests are welcome. For major changes, how-to, and in-depth explanation, 
 
 ## License
 
-<https://img.shields.io/github/license/neek0tine/MAL-Dashboard?style=flat-square><br>
+![LICENSE](https://img.shields.io/github/license/neek0tine/cloudscrapper?style=flat-square)
 
-This project is licensed under GPL License - see the [LICENSE](https://github.com/Neek0tine/MAL-Dashboard/blob/master/LICENSE) file for details
+This project is licensed under GPL License - see the [LICENSE](https://github.com/Neek0tine/cloudscrapper/blob/master/LICENSE) file for details
