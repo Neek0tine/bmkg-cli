@@ -1,5 +1,5 @@
 
-![cloudscrapper](https://github.com/Neek0tine/cloudscrapper/blob/main/assets/repository-open-graph-template-01.png)
+![cloudscrapper](https://github.com/Neek0tine/cloudscrapper/blob/main/assets/repository.png)
 
 # cloud-scrapper
 
