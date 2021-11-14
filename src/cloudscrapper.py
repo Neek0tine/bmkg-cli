@@ -101,7 +101,7 @@ class cloudscrapper:
                                  'temp': temp_list[-4:], 'humid': humid_list[-4:], 'wind': wind_list[-4:]})
 
             forecast = pd.DataFrame()
-            print(f'Extracting {city_name}data [OK]')
+            print(f'{city_name} forecast [OK]')
             forecast = forecast.append([today, day2, day3, day4, day5, day6, day7])
             return forecast
 
