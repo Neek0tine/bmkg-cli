@@ -1,7 +1,7 @@
 
 ![cloudscrapper](https://github.com/Neek0tine/cloudscrapper/blob/main/assets/repository.png)
 
-# cloud-scrapper
+# cloudscrapper
 
 `cloudscrapper` is a python program used to simply gather information about weather in Indonesian by means of web scrapping. 
 Utilizing `requests` and `beautifulsoup4` module, this program simply output the weather condition at current time, without GUI hassle. 
