@@ -53,8 +53,7 @@ class cloudscrapper:
             r = BeautifulSoup(request, 'html.parser')
             city_name = r.find('title')
             city_name = (" ".join(((str(city_name.text).split('-')[0]).split(' '))[2:]))
-            print(f'Extracting {city_name}data ... ')
-
+ 
             table = r.find('div', {'class': 'prakicu-kabkota tab-v1 margin-bottom-30'})
             dates = table.find_all('li')
             date_list = []
@@ -102,6 +101,7 @@ class cloudscrapper:
                                  'temp': temp_list[-4:], 'humid': humid_list[-4:], 'wind': wind_list[-4:]})
 
             forecast = pd.DataFrame()
+            print(f'Extracting {city_name}data [OK]')
             forecast = forecast.append([today, day2, day3, day4, day5, day6, day7])
             return forecast
 
