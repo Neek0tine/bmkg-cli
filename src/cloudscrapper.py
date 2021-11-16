@@ -7,11 +7,11 @@ __maintainer__ = "Neek 'Nek0tine' Calvin"
 __email__ = "nicholas.juan.kalvin-2020@stmm.unair.ac.id"
 __status__ = "Development"
 
-from bs4 import BeautifulSoup
-import pandas as pd
+
 import asyncio
-import inquirer
 import httpx
+import pandas as pd
+from bs4 import BeautifulSoup
 
 
 class cloudscrapper:
@@ -27,8 +27,7 @@ class cloudscrapper:
             pass
         else:
             print(f'Request Failed: {_home_page}')
-
-        _home_page_soup = BeautifulSoup((_home_page.text[26715:56509]), 'html.parser')
+        _home_page_soup = BeautifulSoup((_home_page.text[26135:84181]), 'html.parser')
         _cities_link = _home_page_soup.find_all("a", {"class": "link-block"})
         _cities_link = [f'https://www.bmkg.go.id/{link["href"]}' for link in _cities_link]
 
@@ -53,7 +52,7 @@ class cloudscrapper:
             r = BeautifulSoup(request, 'html.parser')
             city_name = r.find('title')
             city_name = (" ".join(((str(city_name.text).split('-')[0]).split(' '))[2:]))
- 
+
             table = r.find('div', {'class': 'prakicu-kabkota tab-v1 margin-bottom-30'})
             dates = table.find_all('li')
             date_list = []
@@ -101,7 +100,7 @@ class cloudscrapper:
                                  'temp': temp_list[-4:], 'humid': humid_list[-4:], 'wind': wind_list[-4:]})
 
             forecast = pd.DataFrame()
-            print(f'{city_name} forecast [OK]')
+            print(f'{city_name}forecast [OK]')
             forecast = forecast.append([today, day2, day3, day4, day5, day6, day7])
             return forecast
 
